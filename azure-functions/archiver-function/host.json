@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "extensions": {
+    "cosmosDB": {
+      "connectionStringSetting": "COSMOS_DB_CONNECTION_STRING",
+      "preferredLocations": [ "southeastasia" ]
+    }
+  },
+  "singleton": {
+    "lockPeriod": "00:00:15",
+    "lockAcquisitionTimeout": "00:01:00",
+    "lockAcquisitionPollingInterval": "00:00:05",
+    "listenerLockPeriod": "00:01:00",
+    "listenerLockTimeout": "00:01:00",
+    "listenerLockPollingInterval": "00:00:05",
+    "lockRenewInterval": "00:00:15",
+    "listenerLockRenewInterval": "00:00:15"
+  }
+}
