@@ -1,0 +1,12 @@
+### Get a recent record (less than 3 months old)
+GET http://<your-container-app-url>/records/hot-record-123
+Content-Type: application/json
+
+### Get an old, archived record (older than 3 months)
+# This call should hit the retrieval function
+GET http://<your-container-app-url>/records/cold-record-456
+Content-Type: application/json
+
+### Get a record that does not exist
+GET http://<your-container-app-url>/records/non-existent-record
+Content-Type: application/json
